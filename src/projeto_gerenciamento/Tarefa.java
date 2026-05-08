@@ -12,7 +12,7 @@ public class Tarefa {
         this.descricao = descricao;
     }
 
-    public String getGerenciador
+    public String getGerenciador ()
     
     
 }
