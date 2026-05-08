@@ -12,7 +12,31 @@ public class Tarefa {
         this.descricao = descricao;
     }
 
-    public String getGerenciador ()
+    public String getGerenciador() {
+        return gerenciador;
+    }
+
+    public boolean isConcluida() {
+        return concluida;
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public void setGerenciador(String gerenciador) {
+        this.gerenciador = gerenciador;
+    }
+
+    public void setConcluida(boolean concluida) {
+        this.concluida = concluida;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+
+    
     
     
 }
