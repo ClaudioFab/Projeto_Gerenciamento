@@ -36,7 +36,11 @@ public class Tarefa {
         this.descricao = descricao;
     }
 
-    
+    public void impressao (){
+        System.out.println("gerenciador:" + getGerenciador ());
+        System.out.println("concluida");
+        System.out.println("descricao:" + getDescricao ());
+    }
     
     
 }
