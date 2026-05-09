@@ -2,39 +2,48 @@
 package projeto_gerenciamento;
 
 public class Tarefa {
-        private String gerenciador;
-        private boolean concluida;
+        private String titulo;
         private String descricao;
+        private boolean concluida;
 
-    public Tarefa(String gerenciador, boolean concluida, String descricao) {
-        this.gerenciador = gerenciador;
-        this.concluida = concluida;
-        this.descricao = descricao;
-    }
+        //Construtor------------------------------------------------------------
+        public Tarefa(String titulo, String descricao, boolean concluida) {
+            this.titulo = titulo;
+            this.descricao = descricao;
+            this.concluida = concluida;
+        }
+        
+        //GETTER----------------------------------------------------------------
+        public String getTitulo() {
+            return titulo;
+        }
 
-    public String getGerenciador() {
-        return gerenciador;
-    }
+        public String getDescricao() {
+            return descricao;
+        }
 
-    public boolean isConcluida() {
-        return concluida;
-    }
+        public boolean isConcluida() {
+            return concluida;
+        }
 
-    public String getDescricao() {
-        return descricao;
-    }
+        //SETTER----------------------------------------------------------------
+        public void setTitulo(String titulo) {
+            this.titulo = titulo;
+        }
 
-    public void setGerenciador(String gerenciador) {
-        this.gerenciador = gerenciador;
-    }
+        public void setDescricao(String descricao) {
+            this.descricao = descricao;
+        }
 
-    public void setConcluida(boolean concluida) {
-        this.concluida = concluida;
-    }
+        public void setConcluida(boolean concluida) {
+            this.concluida = concluida;
+        }
 
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
-    }
+        
+
+        
+    
+
 
     
     
