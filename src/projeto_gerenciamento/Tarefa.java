@@ -45,7 +45,11 @@ public class Tarefa {
     
 
 
-    
+    public void impressao (){
+        System.out.println("gerenciador:" + getGerenciador ());
+        System.out.println("concluida");
+        System.out.println("descricao:" + getDescricao ());
+    }
     
     
 }
