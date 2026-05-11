@@ -10,7 +10,7 @@ public class Tarefa {
         public Tarefa(String titulo, String descricao, boolean concluida) {
             this.titulo = titulo;
             this.descricao = descricao;
-            this.concluida = concluida;
+            this.concluida = false;
         }
         
         //GETTER----------------------------------------------------------------
@@ -38,18 +38,12 @@ public class Tarefa {
         public void setConcluida(boolean concluida) {
             this.concluida = concluida;
         }
-
         
+        public void impressao(){
+            System.out.println("Tarefa: "+getTitulo());
+            System.out.println("Descrição: "+getDescricao());
+            System.out.println("Concluida: "+isConcluida());
+        }
 
-        
-    
 
-
-    public void impressao (){
-        System.out.println("gerenciador:" + getGerenciador ());
-        System.out.println("concluida");
-        System.out.println("descricao:" + getDescricao ());
-    }
-    
-    
 }
