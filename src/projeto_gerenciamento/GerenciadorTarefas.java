@@ -13,8 +13,7 @@ public class GerenciadorTarefas {
     public void adicionarTarefa(){
         String titulo01 = JOptionPane.showInputDialog(null,"Digite a Tarefa a ser feita: ");
         String descri01 = JOptionPane.showInputDialog(null,"Descreva a tarefa: ");
-        Tarefa t1 = new Tarefa(titulo01,descri01,false);
-        lista.add(t1);
+        lista.add(new Tarefa(titulo01,descri01,false));
     }
     
     public void listarTarefas(){
@@ -26,7 +25,8 @@ public class GerenciadorTarefas {
     }
     
     public void concluirTarefa(int indice){
-
+        Tarefa t1 = lista.get(indice);
+        t1.setConcluida(true);
     }
 
 }

@@ -42,7 +42,7 @@ public class Tarefa {
         public void impressao(){
             System.out.println("Tarefa: "+getTitulo());
             System.out.println("Descrição: "+getDescricao());
-            System.out.println("Concluida: "+isConcluida());
+            System.out.println("Estado da tarefa: "+(isConcluida()? "Finalizada" : "Não Concluída"));
         }
 
 
