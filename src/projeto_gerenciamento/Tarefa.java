@@ -1,6 +1,8 @@
 
 package projeto_gerenciamento;
 
+import javax.swing.JOptionPane;
+
 public class Tarefa {
         private String titulo;
         private String descricao;
@@ -39,10 +41,8 @@ public class Tarefa {
             this.concluida = concluida;
         }
         
-        public void impressao(){
-            System.out.println("Tarefa: "+getTitulo());
-            System.out.println("Descrição: "+getDescricao());
-            System.out.println("Estado da tarefa: "+(isConcluida()? "Finalizada" : "Não Concluída"));
+        public void impressao(int numero){
+            JOptionPane.showMessageDialog(null,numero+"º Tarefa: "+getTitulo()+"\nDescrição: "+getDescricao()+"\nEstado da tarefa: "+(isConcluida()? "Finalizada" : "Não Concluída"),"Tarefa ("+numero+")",JOptionPane.INFORMATION_MESSAGE);
         }
 
 
