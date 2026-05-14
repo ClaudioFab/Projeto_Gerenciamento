@@ -54,4 +54,8 @@ public class GerenciadorTarefas {
         System.exit(0);
     }
 
+    void adicionarTarefas() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
 }
