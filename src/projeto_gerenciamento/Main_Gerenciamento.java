@@ -1,15 +1,18 @@
 package projeto_gerenciamento;
 
-import java.util.Scanner;
+
+import javax.swing.JOptionPane;
 
 public class Main_Gerenciamento {
 
     public static void main(String[] args) {
         GerenciadorTarefas gerenciador = new GerenciadorTarefas();
-        Scanner scan = new Scanner(System.in);
+        
         while (true) {
-            System.out.println("1- Adicionar tarefas\n2- Listar tarefas\n3- Concluir tarefa\n4- Editar tarefa\n5- Listar tarefas concluidas\n6- Sair  ");
-            int adicionar = scan.nextInt();
+           
+            String a0 = JOptionPane.showInputDialog(null, "1- Adicionar tarefas\n2- Listar tarefas\n3- Concluir tarefa\n4- Editar tarefa\n5- Listar tarefas concluidas\n6- Sair  ");
+            int adicionar = Integer.parseInt(a0);
+            
             switch (adicionar) {
                 case 1:
                     gerenciador.adicionarTarefa();
@@ -20,14 +23,14 @@ public class Main_Gerenciamento {
                     break;
 
                 case 3:
-                    System.out.println("Digite o numero da tarefa que foi concluida.");
-                    int indice= scan.nextInt();
+                    String a1 = JOptionPane.showInputDialog(null,"Digite o numero da tarefa que foi concluida.");
+                    int indice= Integer.parseInt(a1);
                     gerenciador.concluirTarefa(indice - 1);
                     break;
 
                 case 4:
-                    System.out.println("Digite o numero da tarefa que deseja editar.");
-                    int edita= scan.nextInt();
+                    String a2 = JOptionPane.showInputDialog(null,"Digite o numero da tarefa que deseja editar.");
+                    int edita= Integer.parseInt(a2);
                     gerenciador.editarTarefa(edita - 1);
                     break;
 
@@ -39,7 +42,7 @@ public class Main_Gerenciamento {
                     gerenciador.finalizar();
                     break;
                 default:
-                    System.out.println("Opcção invalida");
+                    JOptionPane.showMessageDialog(null,"Opcção invalida");
             }
 
         }
